@@ -12,8 +12,8 @@ public class StringSearch2 {
         System.out.println("Input a term you would like to search for:");
         String query = input.nextLine();
         input.close();
-        Integer index = aliceFirstSentence.indexOf(query);
-        Integer length = query.length();
+        int index = aliceFirstSentence.indexOf(query);
+        int length = query.length();
         System.out.println("Your search term first appears at index " + index + ". Your term is "
                 + length + " characters long.");
         String modifiedSentence = aliceFirstSentence.replace(query, "");

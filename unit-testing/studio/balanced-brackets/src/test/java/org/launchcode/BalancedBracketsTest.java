@@ -20,7 +20,10 @@ class BalancedBracketsTest {
     public void multipleBracketsReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[][]"));
     }
-
+    @Test
+    public void doubleBracketsReturnsTrue() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[[]]"));
+    }
     @Test
     public void balancedBracketsPlusStuffAtTheEndReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[]a"));
